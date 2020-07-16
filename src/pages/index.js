@@ -24,7 +24,10 @@ export async function getStaticProps() {
 
 export default function Home(props) {
   return (
-    <Layout title="Home">
+    <Layout
+      title="Dólar Hoje"
+      description="Veja a cotação do dólar americano hoje. Preço do dólar sempre atualizado!"
+    >
       <h1>{props.usdbrl}</h1>
     </Layout>
   )

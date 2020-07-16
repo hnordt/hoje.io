@@ -6,6 +6,7 @@ export default function Layout(props) {
     <>
       <Head>
         <title>{props.title} | hoje.io</title>
+        <meta name="description" content={props.description} />
       </Head>
       <main className="p-6">{props.children}</main>
     </>
