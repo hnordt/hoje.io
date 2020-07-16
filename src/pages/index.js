@@ -3,7 +3,7 @@ import { GoogleSpreadsheet } from "google-spreadsheet"
 import Layout from "components/Layout"
 
 export async function getStaticProps() {
-  const doc = new GoogleSpreadsheet(process.send.GOOGLE_SHEETS_SHEET_ID)
+  const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEETS_SHEET_ID)
 
   doc.useApiKey(process.env.GOOGLE_SHEETS_API_KEY)
   await doc.loadInfo()
