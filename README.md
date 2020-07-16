@@ -1,6 +1,4 @@
-# Web Template
-
-A template for creating amazing web apps
+# hoje.io
 
 ## Available Scripts
 

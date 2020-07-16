@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-        <title>{props.title}</title>
+        <title>{props.title} | hoje.io</title>
       </Head>
       <main className="p-6">{props.children}</main>
     </>
