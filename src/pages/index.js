@@ -18,6 +18,7 @@ export async function getStaticProps() {
     props: {
       usdbrl,
     },
+    unstable_revalidate: 1,
   }
 }
 
