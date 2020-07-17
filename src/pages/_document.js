@@ -7,6 +7,24 @@ export default class Document extends BaseDocument {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
+            <>
+              <script
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+                async
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
+                  `,
+                }}
+              />
+            </>
+          )}
         </Head>
         <body className="bg-cool-gray-100 antialiased">
           <Main />
