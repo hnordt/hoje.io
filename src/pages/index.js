@@ -37,6 +37,9 @@ export default function Home(props) {
     >
       <div className="bg-white shadow rounded-lg w-full max-w-xs sm:max-w-xl">
         <p className="py-8 px-8 flex flex-col items-center sm:flex-row sm:justify-center">
+          <span className="font-medium text-cool-gray-500 text-2xl leading-10 sm:pr-4">
+            Hoje
+          </span>
           <span className="font-semibold text-cool-gray-900 text-3xl">
             <span role="img" aria-label="Bandeira dos Estados Unidos">
               🇺🇸
@@ -51,14 +54,6 @@ export default function Home(props) {
               🇧🇷
             </span>{" "}
             {formatCurrency("BRL", props.usdbrl)}
-          </span>
-        </p>
-        <p className="border-t border-cool-gray-100 text-cool-gray-500 text-sm text-center leading-5 py-6 px-8 flex flex-col sm:flex-row sm:justify-center">
-          <span>Última atualização</span>
-          <span className="hidden sm:block">&nbsp;</span>
-          <span>
-            {new Date().toLocaleDateString("pt-BR")}{" "}
-            {new Date().toLocaleTimeString("pt-BR")}
           </span>
         </p>
       </div>
