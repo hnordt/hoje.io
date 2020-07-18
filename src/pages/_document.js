@@ -26,7 +26,7 @@ export default class Document extends BaseDocument {
             </>
           )}
         </Head>
-        <body className="bg-cool-gray-100 antialiased">
+        <body className="bg-white antialiased">
           <Main />
           <NextScript />
         </body>

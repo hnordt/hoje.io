@@ -23,7 +23,8 @@
   "devDependencies": {
     "@commitlint/cli": "9.0.1",
     "@commitlint/config-conventional": "9.0.1",
-    "@tailwindcss/ui": "0.3.0",
+    "@tailwindcss/typography": "0.2.0",
+    "@tailwindcss/ui": "0.3.1",
     "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.3",
     "@testing-library/user-event": "12.0.11",
@@ -34,7 +35,7 @@
     "prettier": "2.0.5",
     "react-scripts": "3.4.1",
     "semantic-release": "17.1.1",
-    "tailwindcss": "1.4.6"
+    "tailwindcss": "1.5.1"
   },
   "private": true
 }

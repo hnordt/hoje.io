@@ -8,9 +8,7 @@ export default function Layout(props) {
         <title>{props.title} | hoje.io</title>
         <meta name="description" content={props.description} />
       </Head>
-      <main className="pt-32 px-6 flex flex-col items-center">
-        {props.children}
-      </main>
+      <main>{props.children}</main>
     </>
   )
 }
