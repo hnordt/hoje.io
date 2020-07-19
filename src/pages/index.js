@@ -46,7 +46,7 @@ export default function Home(props) {
           </span>
           <div className="block md:hidden" aria-hidden>
             <h2 class="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
-              <span>Dólar hoje</span>
+              Dólar hoje
               <br />
               <span class="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
@@ -66,7 +66,7 @@ export default function Home(props) {
           </div>
           <div className="hidden md:block">
             <h2 class="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
-              <span>Hoje o dólar vale</span>
+              Hoje o dólar vale
               <br />
               <span class="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
@@ -84,7 +84,7 @@ export default function Home(props) {
               através da{" "}
               <a
                 className="font-medium text-gray-700 underline"
-                href="https://pt.wikipedia.org/wiki/Estados_Unidos"
+                href="https://pt.wikipedia.org/wiki/Sistema_de_Reserva_Federal_dos_Estados_Unidos"
                 title="Artigo sobre o Sistema de Reserva Federal dos Estados Unidos na Wikipédia portuguesa"
               >
                 Reserva Federal dos Estados Unidos
