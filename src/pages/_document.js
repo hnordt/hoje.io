@@ -6,7 +6,6 @@ export default class Document extends BaseDocument {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
             <>
               <script

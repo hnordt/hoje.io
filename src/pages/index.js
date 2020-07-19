@@ -32,6 +32,7 @@ function formatCurrency(currency, value) {
 export default function Home(props) {
   return (
     <Layout
+      favicon="usa-flag"
       title="Dólar Hoje"
       description="Veja a cotação do dólar americano hoje. Preço do dólar sempre atualizado!"
     >
