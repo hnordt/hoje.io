@@ -128,7 +128,7 @@ export default function Home(props) {
             através da{" "}
             <a
               className="font-medium"
-              href="https://pt.wikipedia.org/wiki/Estados_Unidos"
+              href="https://pt.wikipedia.org/wiki/Sistema_de_Reserva_Federal_dos_Estados_Unidos"
               title="Artigo sobre o Sistema de Reserva Federal dos Estados Unidos na Wikipédia portuguesa"
             >
               Reserva Federal dos Estados Unidos
