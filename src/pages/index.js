@@ -2,7 +2,7 @@ import React from "react"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import Layout from "components/Layout"
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEETS_SHEET_ID)
 
   doc.useApiKey(process.env.GOOGLE_SHEETS_API_KEY)
@@ -18,7 +18,6 @@ export async function getStaticProps() {
     props: {
       usdbrl,
     },
-    unstable_revalidate: 1,
   }
 }
 
@@ -36,8 +35,8 @@ export default function Home(props) {
       title="Dólar Hoje"
       description="Veja a cotação do dólar americano hoje. Preço do dólar sempre atualizado!"
     >
-      <div class="mx-auto max-w-screen-xl py-20 px-12">
-        <div class="text-center">
+      <div className="mx-auto max-w-screen-xl py-20 px-12">
+        <div className="text-center">
           <span
             className="block text-4xl mb-3"
             role="img"
@@ -46,14 +45,14 @@ export default function Home(props) {
             🇺🇸
           </span>
           <div className="block md:hidden" aria-hidden>
-            <h2 class="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
+            <h2 className="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
               Dólar hoje
               <br />
-              <span class="text-indigo-600">
+              <span className="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
               </span>
             </h2>
-            <p class="text-xl text-gray-500 mx-auto max-w-2xl mt-5">
+            <p className="text-xl text-gray-500 mx-auto max-w-2xl mt-5">
               O dólar americano é a moeda emitida pelos{" "}
               <a
                 className="font-medium text-gray-700 underline"
@@ -66,14 +65,14 @@ export default function Home(props) {
             </p>
           </div>
           <div className="hidden md:block">
-            <h2 class="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
+            <h2 className="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
               Hoje o dólar vale
               <br />
-              <span class="text-indigo-600">
+              <span className="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
               </span>
             </h2>
-            <p class="text-xl text-gray-500  mx-auto max-w-2xl mt-5">
+            <p className="text-xl text-gray-500  mx-auto max-w-2xl mt-5">
               O dólar americano é a moeda emitida pelos{" "}
               <a
                 className="font-medium text-gray-700 underline"
