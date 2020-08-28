@@ -133,6 +133,12 @@ export default function Home(props) {
             alterações também influenciam o orçamento de viagens para o
             exterior.
           </p>
+          <h2>O que é o câmbio flutuante?</h2>
+          <p>
+            O governo brasileiro mantém o dólar em variação, de acordo com a
+            oferta e procura da moeda e negociações comerciais. É por isso que
+            sua operação é chamada de "câmbio flutuante".
+          </p>
           <h2>Que países, além dos EUA, aceitam o dólar atualmente?</h2>
           <p>
             Como moeda oficial: Ilhas Virgens Britânicas, Equador, Ilhas Turcas
@@ -147,7 +153,7 @@ export default function Home(props) {
           </p>
           <h2>Porque o mundo funciona em dólar?</h2>
           <p>
-            O Dólar passou a ser referência em todo o mundo ainda na primeira
+            O dólar passou a ser referência em todo o mundo ainda na primeira
             metade do século XX, quando o padrão ouro, adotado até então,
             fracassou. Até o início da Primeira Guerra Mundial, as instituições
             financeiras de cada país adotavam uma taxa fixa para suas moedas em
