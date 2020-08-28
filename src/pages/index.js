@@ -32,7 +32,7 @@ export default function Home(props) {
   return (
     <Layout
       favicon="usa-flag"
-      title="Dólar Hoje"
+      title="Dólar Hoje | Cotação Comercial do Dólar Hoje"
       description="Veja a cotação do dólar americano hoje. Preço do dólar sempre atualizado!"
     >
       <div className="mx-auto max-w-screen-xl py-20 px-12">
@@ -44,43 +44,25 @@ export default function Home(props) {
           >
             🇺🇸
           </span>
-          <div className="block md:hidden" aria-hidden>
-            <h1 className="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
-              Dólar hoje
-              <br />
-              <span className="text-indigo-600">
-                {formatCurrency("BRL", props.usdbrl)}
-              </span>
-            </h1>
-            <p className="text-xl text-gray-500 mx-auto max-w-2xl mt-5">
-              O dólar americano é a moeda emitida pelos{" "}
-              <a
-                className="font-medium text-gray-700 underline"
-                href="https://pt.wikipedia.org/wiki/Estados_Unidos"
-                title="Artigo sobre os Estados Unidos na Wikipédia portuguesa"
-              >
-                Estados Unidos
-              </a>
-              .
-            </p>
-          </div>
-          <div className="hidden md:block">
-            <h1 className="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
-              Hoje o dólar vale
-              <br />
-              <span className="text-indigo-600">
-                {formatCurrency("BRL", props.usdbrl)}
-              </span>
-            </h1>
-            <p className="text-xl text-gray-500  mx-auto max-w-2xl mt-5">
-              O dólar americano é a moeda emitida pelos{" "}
-              <a
-                className="font-medium text-gray-700 underline"
-                href="https://pt.wikipedia.org/wiki/Estados_Unidos"
-                title="Artigo sobre os Estados Unidos na Wikipédia portuguesa"
-              >
-                Estados Unidos
-              </a>{" "}
+          <h1 className="text-5xl tracking-tight leading-none font-extrabold text-gray-900 md:text-6xl">
+            <span className="hidden md:inline-block">Hoje o dólar vale</span>
+            <span className="inline-block md:hidden">Dólar hoje</span>
+            <br />
+            <span className="text-indigo-600">
+              {formatCurrency("BRL", props.usdbrl)}
+            </span>
+          </h1>
+          <p className="text-xl text-gray-500  mx-auto max-w-2xl mt-5">
+            O dólar americano é a moeda emitida pelos{" "}
+            <a
+              className="font-medium text-gray-700 underline"
+              href="https://pt.wikipedia.org/wiki/Estados_Unidos"
+              title="Artigo sobre os Estados Unidos na Wikipédia portuguesa"
+            >
+              Estados Unidos
+            </a>
+            <span className="hidden md:inline-block">
+              {" "}
               através da{" "}
               <a
                 className="font-medium text-gray-700 underline"
@@ -89,9 +71,9 @@ export default function Home(props) {
               >
                 Reserva Federal dos Estados Unidos
               </a>
-              .
-            </p>
-          </div>
+            </span>
+            .
+          </p>
         </div>
       </div>
       <div className="border-t border-cool-gray-200 bg-cool-gray-100 py-20 px-12 flex justify-center">
