@@ -108,7 +108,7 @@ export default function Home(props) {
             </thead>
             <tbody>
               {[1, 2, 5, 10, 20, 50, 100, 500, 1000].map((v) => (
-                <tr>
+                <tr key={v}>
                   <td>{formatCurrency("USD", v)}</td>
                   <td>{formatCurrency("BRL", v * props.usdbrl)}</td>
                 </tr>
