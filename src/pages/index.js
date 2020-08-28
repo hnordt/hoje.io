@@ -32,7 +32,7 @@ export default function Home(props) {
   return (
     <Layout
       favicon="usa-flag"
-      title="Dólar Hoje | Cotação Comercial do Dólar Hoje"
+      title="Dólar Hoje | Cotação Comercial do Dólar Americano"
       description="Veja a cotação do dólar americano hoje. Preço do dólar sempre atualizado!"
     >
       <div className="mx-auto max-w-screen-xl py-20 px-12">
