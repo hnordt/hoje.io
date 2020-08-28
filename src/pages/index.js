@@ -133,6 +133,37 @@ export default function Home(props) {
             alterações também influenciam o orçamento de viagens para o
             exterior.
           </p>
+          <h2>Que países, além dos EUA, aceitam o dólar atualmente?</h2>
+          <p>
+            Como moeda oficial: Ilhas Virgens Britânicas, Equador, Ilhas Turcas
+            e Caicos, El Salvador, Guam, Ilhas Marianas do Norte, Ilhas
+            Marshall, Micronésia, Palau, Porto Rico, Samoa, Timor Leste e
+            Zimbábue.
+          </p>
+          <p>Dólar equiparado: Panamá, Bahamas e Belize.</p>
+          <p>
+            Grande aceitação: Vietnã, Camboja, Nicarágua, Barbados, Ilhas
+            Cayman, Saint Martin, Saint Kitts e Nevis, Curaçao.
+          </p>
+          <h2>Porque o mundo funciona em dólar?</h2>
+          <p>
+            O Dólar passou a ser referência em todo o mundo ainda na primeira
+            metade do século XX, quando o padrão ouro, adotado até então,
+            fracassou. Até o início da Primeira Guerra Mundial, as instituições
+            financeiras de cada país adotavam uma taxa fixa para suas moedas em
+            relação ao outro. As negociações comerciais eram feitas respeitando
+            esse preço fixo, impedindo que alguns países mexessem em sua taxa de
+            câmbio para aumentar suas exportações e reverter déficits
+            comerciais, e, assim, garantindo a estabilidade da economia.
+          </p>
+          <p>
+            As discussões sobre o novo modelo começaram ainda durante a Segunda
+            Guerra Mundial, e consolidou-se, nesse período, a visão de que a
+            melhor estratégia seria algo similar à adotada durante o padrão
+            ouro, com uma taxa de câmbio fixa, baseada em uma moeda forte. A
+            moeda seria obviamente do país que fosse considerado capaz de ser o
+            regente da orquestra, naquela época, os Estados Unidos.
+          </p>
         </article>
       </div>
     </Layout>
