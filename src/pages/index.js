@@ -45,13 +45,13 @@ export default function Home(props) {
             🇺🇸
           </span>
           <div className="block md:hidden" aria-hidden>
-            <h2 className="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
+            <h1 className="text-5xl tracking-tight leading-none font-extrabold text-gray-900">
               Dólar hoje
               <br />
               <span className="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
               </span>
-            </h2>
+            </h1>
             <p className="text-xl text-gray-500 mx-auto max-w-2xl mt-5">
               O dólar americano é a moeda emitida pelos{" "}
               <a
@@ -65,13 +65,13 @@ export default function Home(props) {
             </p>
           </div>
           <div className="hidden md:block">
-            <h2 className="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
+            <h1 className="text-6xl tracking-tight leading-none font-extrabold text-gray-900">
               Hoje o dólar vale
               <br />
               <span className="text-indigo-600">
                 {formatCurrency("BRL", props.usdbrl)}
               </span>
-            </h2>
+            </h1>
             <p className="text-xl text-gray-500  mx-auto max-w-2xl mt-5">
               O dólar americano é a moeda emitida pelos{" "}
               <a
