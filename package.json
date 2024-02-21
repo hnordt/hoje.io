@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@xstate/react": "0.8.1",
-    "axios": "0.19.2",
+    "axios": "0.28.0",
     "classnames": "2.2.6",
     "formik": "2.1.4",
     "google-spreadsheet": "3.0.11",
